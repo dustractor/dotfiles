@@ -1,0 +1,60 @@
+!! Menu - Title
+menu.title.bg: flat
+menu.title.bg.color: #efebe1
+menu.title.text.color: #727d87
+
+!! Menu - Items
+menu.items.bg: flat
+menu.items.bg.color: #efebe1
+menu.items.text.color: #727d87
+menu.items.disabled.text.color: #bbbbbb
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #727d87
+menu.items.active.text.color: #efebe1
+
+!! Window - Title
+window.*.title.bg: flat
+window.*.title.bg.color: #efebe1
+
+!! Window - Label
+window.active.label.bg: flat
+window.active.label.bg.color: #727d87
+window.active.label.border.color: #000000
+window.active.label.text.color: #efebe1
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #727d87
+
+!! Window - Client
+window.*.client.color: #efebe1
+
+!! Window - Handle (Unten mitte)
+window.*.handle.bg: flat
+window.*.handle.bg.color: #efebe1
+
+!! Window - Grip (Unten aussen)
+window.*.grip.bg: flat
+window.*.grip.bg.color: #efebe1
+
+!! Window - Buttons
+window.active.button.*.bg: flat
+window.active.button.*.image.color: #727d87
+window.active.button.*.bg.color: #efebe1
+window.active.button.pressed.bg: sunken bevel1
+window.active.button.disabled.bg: parentrelative
+window.active.button.disabled.image.color: #efebe1
+window.inactive.button.*.bg: flat
+window.inactive.button.*.image.color: #727d87
+window.inactive.button.*.bg.color: #efebe1
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.disabled.image.color: #efebe1
+
+border.color: #555555
+border.width: 0
+padding.width: 2
+window.handle.width: 2
+window.client.padding.width: 0
+menu.overlap: 8
+*.text.justify: left
+
+!! Fonts
+*.font:Bitstream Vera Sans:pixelsize=10

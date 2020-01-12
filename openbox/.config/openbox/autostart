@@ -1,0 +1,4 @@
+xrandr --auto --output DP-2 --mode 2560x1440 --left-of DP-1 && nitrogen --restore &
+( sleep 2s ) && ~/.enable_compton.sh &
+( sleep 3s ) && tint2 -c ~/.config/tint2/tint2rc &
+

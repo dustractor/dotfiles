@@ -1,0 +1,235 @@
+" ···1 plug
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin()
+Plug 'liuchengxu/space-vim-dark'
+Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'dustractor/argloco'
+Plug 'dustractor/dazi'
+Plug 'gcmt/taboo.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'kana/vim-repeat'
+Plug 'leafgarland/typescript-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'severij/vadelma'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-liquid'
+Plug 'tpope/vim-surround'
+Plug 'weynhamz/vim-plugin-minibufexpl'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'flazz/vim-colorschemes'
+call plug#end()
+" ···1 set
+set autoindent
+set backspace=indent,eol,start
+set clipboard=unnamedplus
+set colorcolumn=80
+" set cursorline
+set encoding=utf-8
+set expandtab
+" set foldcolumn=2
+set foldenable
+set foldmethod=marker
+set foldmarker=···,¸¸¸
+set hidden
+set laststatus=2
+set modeline
+set mouse=a
+set mousefocus
+set nowrap
+" set number
+set ruler
+set scrolloff=5
+set shiftwidth=4
+set shortmess=aoOIFt
+set smartindent
+set smarttab
+set softtabstop=4
+set switchbuf=useopen,usetab
+set tabpagemax=17
+set tabstop=4
+set wildignore+=__pycache__,\.pyc
+
+" ···1 let
+let $TMP = expand("~/.vimtemp")
+let g:miniBufExplBuffersNeeded = 9
+let g:miniBufExplAutoStart = 1
+let g:miniBufExplSplitToEdge = 0
+let g:mapleader = "\<space>"
+let g:argloco_map_all = 1
+let g:NERDTreeQuitOnOpen = 1
+let g:bufferline_echo = 0
+let g:bufferline_show_bufnr = 0
+let g:miniBufExplBRSplit = 1
+let g:miniBufExplShowBufNumbers = 1
+let g:miniBufExplVSplit = 22
+let g:seoul256_background=234
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:dazimap = '<F7>'
+let python_highlight_all = 1
+let g:UltiSnipsExpandTrigger = "<c-k>"
+let g:UltiSnipsJumpForwardTrigger = "<c-k>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-j>"
+let g:UltiSnipsSnippetDirectories = ["/home/user/.vim/bpysnippets"]
+let g:UltiSnipsSnippetsDir= $HOME ."/.vim/bpysnippets"
+let g:cscyc_n = 0
+let g:cscyc_light = split('solarized tigrana-256-light Tomorrow pencil seoul256-light')
+let g:cscyc_dark = split('solarized zenburn gruvbox seoul256 molokai apprentice material-theme vadelma')
+let g:argloco_map_all = 1
+
+" ···1 fun
+function! NamelessWipeout()
+    for i in range(bufnr('$'),1,-1)
+        if bufname(i) == ""
+            exe "bw ".i
+        endif
+    endfor
+endfunction
+
+
+
+" ···1 com
+
+com! Full set lines=63 columns=255
+com! Tall set lines=63 columns=127
+com! UnTall set lines=20 columns=80
+com! WipeoutNameless call NamelessWipeout()
+" ···1 map
+map <esc>OP <F1>
+map <F1> <nop>
+inoremap <F1> <esc>
+nnoremap <C-h> gT
+nnoremap <C-l> gt
+nnoremap <C-j> :GoForth<CR>
+nnoremap <C-k> :GoBackth<CR>
+nnoremap ê :bn<CR>
+nnoremap ë :bN<CR>
+inoremap jj <esc>
+inoremap kk <esc>
+inoremap jk <esc>
+inoremap kj <esc>
+nnoremap <F10> :NERDTreeToggle<CR>
+nnoremap <F9> :MBEToggle<CR>
+nnoremap <leader>/ :set hls!<CR>
+nnoremap <leader>t :Tall<CR>
+nnoremap <leader>T :UnTall<CR>
+nnoremap <leader>K :WipeoutNameless<CR>
+nnoremap <leader>; :
+nnoremap <leader>p :s/print(\(.*\))/print("\1:",\1)/<CR>
+cnoremap <C-r><C-l> <C-r>=getline('.')<CR>
+
+" ···1 abbrev
+cabbrev qq qa!
+cabbrev we wa
+
+" ···1 au
+
+aug XresourcesEdit
+    au!
+    au BufWritePost ~/.Xresources !xrdb -load ~/.Xresources
+aug END
+
+aug LogView
+    au!
+    au FileChangedShell *.log e!
+aug END
+
+aug YamlEdit
+    au!
+    au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+aug END
+
+aug KeepCursorPlace
+    au!
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+aug END
+
+aug SiteMarkdownEdit
+    au!
+    au BufRead,BufReadPost,BufNewFile ~/rosered/templates/*.md source ~/.vim/md.vim
+    au BufWritePost ~/rosered/templates/*.md MarkdownCompile
+aug END
+
+aug VimReload
+    au!
+    au BufWritePost  $MYVIMRC  source $MYVIMRC
+aug END
+
+aug PythonEdit
+    au!
+    au BufNewFile,BufRead,BufReadPost *.py nnoremap <F5> :!python3 %<cr>
+aug END
+
+aug BpyEdit
+    au!
+    au BufReadPost ~/bpy/*.py source ~/.vim/bpy.vim
+aug END
+
+aug WebStuffEdit
+    au!
+    au BufReadPost ~/rosered/* source ~/rosered/site.vim
+    au BufWritePost ~/rosered/edit.vim so edit.vim
+aug END
+
+aug NotesEdit
+    au!
+    au BufWinLeave *.notes.md w
+aug END
+
+" ¸¸¸1
+
+syntax on
+filetype plugin indent on
+
+set bg=dark
+
+" ···1 gui
+
+if has('gui_running')
+
+    set guifont=Inconsolata\ 18
+
+    set guioptions=Ma
+    colo vadelma
+
+
+" ···1 urxvt
+else
+    set ttimeoutlen=5
+    let &t_SI = "\<esc>[5 q"
+    let &t_EI = "\<esc>[2 q"
+    if $TERM == "rxvt-unicode-256color"
+        colo vadelma
+
+
+" ···1 xfce4-terminal ...
+    elseif $TERM == "xterm-256color"
+
+        colo gruvbox
+    endif
+endif
+
+" ···1 hi
+hi ErrorMsg guibg='#CAACAA'
+hi MatchParen gui=NONE guibg=NONE guifg='#40F080' term=NONE ctermbg=NONE ctermfg=37 " [ ]
+hi Cursor gui=NONE guibg='#802060'
+hi StatusLineTerm guibg='#882269'
+hi StatusLineTermNC guibg='#504c50'
+hi Folded gui=bold guibg='#242424' guifg='#555555' term=NONE ctermbg=NONE ctermfg=212
+"
+" MiniBufExpl Colors
+hi MBENormal               guifg=#808080 guibg=#101010
+
+hi MBEChanged              guifg=#CD5907 guibg=#100000
+hi MBEVisibleNormal        guifg=#5DC2D6 guibg=#101010
+hi MBEVisibleChanged       guifg=#F1266F guibg=#101010
+hi MBEVisibleActiveNormal  guifg=#A6DB29 guibg=#101010
+hi MBEVisibleActiveChanged guifg=#FF00FF guibg=#00FF00

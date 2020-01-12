@@ -1,0 +1,44 @@
+!! rezlooks-tempura by rezza heavy modified by smoon
+!! uses gtk colors to dynamically match your gtk theme
+
+menu.items.bg: flat solid
+menu.items.bg.color: GTK_BG_NORMAL
+menu.items.text.color: GTK_TEXT_NORMAL
+menu.items.justify: left
+menu.items.disabled.text.color: GTK_TEXT_INSENSITIVE
+menu.items.active.bg: flat border
+menu.items.active.bg.color: GTK_BG_SELECTED
+menu.items.active.bg.border.color: GTK_BG_NORMAL
+menu.items.active.text.color: GTK_TEXT_SELECTED
+
+window.active.client.color: GTK_BG_PRELIGHT
+window.inactive.client.color: GTK_BG_NORMAL
+window.*.title.bg: raised bevel1
+window.active.title.bg.color: GTK_BG_SELECTED
+window.active.title.bg.colorTo: GTK_BASE_PRELIGHT
+window.inactive.title.bg.color: GTK_BG_NORMAL
+window.inactive.title.bg.colorTo: GTK_BG_PRELIGHT
+window.*.label.bg: parentrelative
+window.active.label.text.color:  GTK_TEXT_SELECTED
+window.inactive.label.text.color: GTK_FG_INSENSITIVE
+window.label.text.justify: left
+
+window.*.button.*.bg: parentrelative
+window.active.button.unpressed.image.color: GTK_TEXT_SELECTED
+window.inactive.button.unpressed.image.color: GTK_BG_NORMAL
+window.*.button.pressed.image.color: GTK_BASE_INSENSITIVE
+window.active.button.disabled.image.color: GTK_BG_SELECTED
+window.inactive.button.disabled.image.color: GTK_BG_NORMAL
+window.active.button.toggled.image.color: GTK_TEXT_PRELIGHT
+window.inactive.button.toggled.image.color: GTK_BG_NORMAL
+
+border.width: 1
+padding.width: 2
+window.handle.width: 0
+window.client.padding.width: 0
+border.color: #000000
+menu.overlap: 0
+
+window.active.label.text.font: Lucida Grande:bold:size=6:shadow=y
+window.inactive.label.text.font: Lucida Grande:bold:size=6:shadow=n
+menu.items.font: Verdana:size=6

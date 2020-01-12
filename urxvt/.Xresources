@@ -1,0 +1,17 @@
+URxvt.scrollBar: false
+! URxvt.borderLess: true
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.autohint:   false
+Xft.lcdfilter:  lcddefault
+URxvt.iso14755:    false
+URxvt.iso14755_52: false
+URxvt*font:   xft:Inconsolata:size=24
+
+
+
+#include ".xcolors/iterm-PencilDark.Xresources"
