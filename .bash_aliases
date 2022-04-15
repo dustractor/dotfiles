@@ -7,6 +7,7 @@ alias v="vim ~/.vim/vimrc"
 alias m="make"
 alias k="vim ~/.config/kitty/kitty.conf"
 alias u="vim ~/.Xresources"
+alias t="vim ~/.tmux.conf"
 alias ww="vim ~/vimwiki/index.wiki"
 alias dotfiles="git --git-dir=$HOME/dotfiles.git --work-tree=$HOME"
 
