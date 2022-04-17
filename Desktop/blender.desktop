@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=blender
+Exec=/home/user/bin/blender/blender
+Comment=
+Terminal=false
+Icon=/home/user/bin/blender/blender.svg
+Type=Application
+Path=
+StartupNotify=false

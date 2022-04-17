@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=dazi
+Comment=
+Exec=urxvt
+Icon=utilities-x-terminal
+Path=/home/user/dazi
+Terminal=false
+StartupNotify=false

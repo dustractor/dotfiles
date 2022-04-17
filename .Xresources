@@ -11,6 +11,9 @@ Xft.lcdfilter:  lcddefault
 URxvt.iso14755:    false
 URxvt.iso14755_52: false
 URxvt*font:   xft:Monofur for Powerline:size=24
+! menu key  emits f2  vim maps <F2> to ctrlp
+URxvt.keysym.0xFF67:string:[12~
+
 
 
 

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=argloco
+Comment=
+Exec=urxvt
+Icon=utilities-x-terminal
+Path=/home/user/argloco
+Terminal=false
+StartupNotify=false
