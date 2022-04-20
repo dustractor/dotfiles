@@ -36,13 +36,10 @@ Configure the repository so that it knows it is supposed to be 'bare'.
 
 ## Step five:
 
-Now that it is bare, you can't just cd into the containing folder and
-issue git commands to it. You have to explicitly specify it as the git
-dir when you're talking to git about it, and it also helps if you're
-explicit about the work tree so make an alias for when you're dealing
-with this one repository:
-
+Make an alias for when you're dealing with this one repository:
+    
     alias dotfiles="git --git-dir=$HOME/dotfiles.git --work-tree=$HOME"
+
 
 Instead of saying ``git add somefile`` you will say ``dotfiles add somefile``, instead
 of saying ``git commit -m some-message`` you will say ``dotfiles commit -m
