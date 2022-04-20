@@ -1,4 +1,4 @@
-#How to make your own dotfiles repository:
+# How to make your own dotfiles repository:
 
 ## Step one:
 
