@@ -23,17 +23,16 @@ already existing 'dotfiles' folder.
 
     mv dotfiles/.git dotfiles.git
 
+Go ahead and remove the 'dotfiles' folder. (The one without the .git
+suffix.)
+
+    rm -rf dotfiles
+
 ## Step four:
 
 Configure the repository so that it knows it is supposed to be 'bare'.
 
     git --git-dir=/path/to/dotfiles.git config core.bare true
-
-
-Go ahead and remove the 'dotfiles' folder. (The one without the .git
-suffix.)
-
-    rm -rf dotfiles
 
 ## Step five:
 
@@ -45,6 +44,7 @@ with this one repository:
 
     alias dotfiles="git --git-dir=$HOME/dotfiles.git --work-tree=$HOME"
 
----
-
+Instead of saying ``git add somefile`` you will say ``dotfiles add somefile``, instead
+of saying ``git commit -m some-message`` you will say ``dotfiles commit -m
+some-message``, and instead of saying ``git push``, you will say ``dotfiles push``.
 
