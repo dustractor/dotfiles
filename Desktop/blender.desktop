@@ -1,9 +1,9 @@
 [Desktop Entry]
 Name=blender
-Exec=/home/user/bin/blender/blender
+Exec=blender
 Comment=
 Terminal=false
-Icon=/home/user/bin/blender/blender.svg
+Icon=/home/user/bin/blender3.1/blender.svg
 Type=Application
 Path=
 StartupNotify=false

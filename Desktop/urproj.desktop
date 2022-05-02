@@ -3,8 +3,8 @@ Version=1.0
 Type=Application
 Name=urproj flask
 Comment=
-Exec=sh -c 'urxvt -e vim -c "so proj.vim"'
-Icon=
+Exec=sh -c 'export T_THEME=molokai; urxvt -name dmonokai -e vim -c "so proj.vim"'
+Icon=org.glimpse_editor.Glimpse
 Path=/home/user/Desktop/flask_app
 Terminal=false
 StartupNotify=false

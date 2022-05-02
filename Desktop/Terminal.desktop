@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Terminal
+Name=Terminal Here
 Comment=Use the command line
-Exec=x-terminal-emulator
+Exec=sh -c 'export T_THEME=gruvbox; urxvt -name gruvds'
 Icon=org.gnome.Terminal
-Path=
+Path=/home/user/Desktop
 Terminal=false
-StartupNotify=true
+StartupNotify=false
