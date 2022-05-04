@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+
+    <menu id="blendermenu" label="blender"><!-- {{{1 blendermenu -->
+        <item label="blender 3.1">
+            <action name="Execute">
+                <execute>
+                    blender
+                </execute>
+            </action>
+        </item>
+    </menu><!-- }}}1 -->
+
+    <menu id="config-menu" label="edit config"><!-- {{{1 config-menu -->
+        <separator label="files"/>
+        <item label="this menu"
+            icon="/usr/share/icons/bloom-dark/mimetypes/48/text-xml.svg">
+        <action name="Execute">
+            <execute>urxvt -e vim ~/.config/openbox/menu.xml</execute>
+        </action>
+    </item>
+    <item label="openbox rc"
+        icon="/usr/share/icons/bloom-dark/mimetypes/48/text-xml.svg">
+    <action name="Execute">
+        <execute>urxvt -e vim ~/.config/openbox/rc.xml</execute>
+    </action>
+    </item>
+    <item label="openbox autostart"
+        icon="/usr/share/icons/bloom-dark/mimetypes/48/text-x-script.svg">
+    <action name="Execute">
+        <execute>urxvt -e vim ~/.config/openbox/autostart</execute>
+    </action>
+    </item>
+    <item label=".Xresources"
+        icon="/usr/share/icons/bloom-dark/mimetypes/48/application-x-theme.svg">
+    <action name="Execute">
+        <execute>urxvt -e vim ~/.Xresources</execute>
+    </action>
+    </item>
+    <item label="tint2rc"
+        icon="/usr/share/icons/bloom-dark/mimetypes/48/x-dia-diagram.svg">
+    <action name="Execute">
+        <execute>urxvt -e vim ~/.config/tint2/tint2rc</execute>
+    </action>
+    </item>
+    <item label="vimrc"
+        icon="/usr/share/icons/bloom-dark/mimetypes/48/text-x-source.svg">
+    <action name="Execute">
+        <execute>urxvt -e vim -c 'e $MYVIMRC'</execute>
+    </action>
+    </item>
+
+    <separator label="Edit"/>
+
+    <item label="lxappearance">
+        <action name="Execute">
+            <execute>lxappearance</execute>
+        </action>
+    </item>
+    <item label="nitrogen">
+        <action name="Execute">
+            <execute>nitrogen</execute>
+        </action>
+    </item>
+    <separator label="Places"/>
+    <item icon="" label="icons">
+        <action name="Execute">
+            <execute>thunar /usr/share/icons</execute>
+        </action>
+    </item>
+
+    </menu><!-- }}}1 -->
+
+    <menu id="root-menu" label="Openbox 3"><!-- {{{1 root-menu -->
+        <menu id="config-menu"/>
+        <separator/>
+        <item icon="/usr/share/icons/hicolor/32x32/apps/firefox.png" label="firefox">
+            <action name="Execute">
+                <execute>firefox</execute>
+            </action>
+        </item>
+        <item icon="/usr/share/icons/breeze/apps/32/system-file-manager.svg" label="thunar">
+            <action name="Execute">
+                <execute>thunar</execute>
+            </action>
+        </item>
+        <item icon="/usr/share/icons/breeze/apps/32/utilities-terminal.svg" label="urxvt">
+            <action name="Execute">
+                <execute>urxvt</execute>
+            </action>
+        </item>
+        <menu id="blendermenu"/>
+        <separator/>
+        <menu id="root-menu-99253" label="system">
+            <!-- This requires the presence of the 'openbox-menu' package to work -->
+            <menu id="/Debian"/>
+            <separator/>
+            <menu label="Applications"
+                execute="/usr/bin/obamenu"
+                id="applications-menu"/>
+            <item label="Configure">
+                <action name="Execute">
+                    <execute>obconf</execute>
+                </action>
+            </item>
+            <item label="Reconfigure">
+                <action name="Reconfigure"/>
+            </item>
+            <item label="Reload">
+                <action name="Restart"/>
+            </item>
+            <item label="Reboot">
+                <action name="Execute">
+                    <execute>reboot</execute>
+                </action>
+            </item>
+            <item label="Shut Down">
+                <action name="Execute">
+                    <execute>shutdown 0</execute>
+                </action>
+            </item>
+            <item label="Log Out">
+                <action name="Exit"/>
+            </item>
+        </menu>
+    </menu><!-- }}}1 -->
+</openbox_menu>

@@ -1,0 +1,2 @@
+nitrogen --restore & ( sleep 2s ) && tint2 &
+
