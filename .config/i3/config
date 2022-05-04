@@ -26,6 +26,7 @@ bindsym $mod+Shift+u exec "export T_THEME='gruvbox'; urxvt -name gruvds"
 bindsym $mod+v exec gvim
 bindsym $mod+g exec firefox
 bindsym $mod+e exec thunar
+bindsym $mod+b exec blender
 # }}}1
 # {{{1 section B
 bindsym $mod+Return exec urxvt
@@ -52,8 +53,8 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+h layout toggle split
-bindsym $mod+Shift+space floating toggle
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+z floating toggle
+bindsym $mod+z focus mode_toggle
 bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 set $ws1 "1"
@@ -107,9 +108,9 @@ bindsym $mod+r mode "resize"
 # }}}1
 # {{{1 colors
 # class                 border  bground text    indicator child_border
-client.focused          #002B36 #232323 #00a5F2 #6272A4   #002B36
-client.focused_inactive #002B36 #002B36 #aaaaaa #44475A   #44475A
-client.unfocused        #282A36 #1a1a1a #888888 #282A36   #282A36
+client.focused          #002B36 #232323 #00a5F2 #00a5f0   #002B36
+client.focused_inactive #002B36 #002B36 #aaaaaa #1085c0   #44475A
+client.unfocused        #282A36 #1a1a1a #888888 #1085c0   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #002B36
