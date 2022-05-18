@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=solarized
+Comment=
+Exec=sh -c 'export T_THEME=solarized ; urxvt -name sol -fn "xft:Monofur for Powerline:size=16"'
+Icon=terminus
+Path=
+Terminal=false
+StartupNotify=false

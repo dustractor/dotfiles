@@ -1,15 +1,18 @@
 # {{{1 A
 
-set $mod Mod4
+set $oskey Mod4
+set $alt Mod1
 
 font pango:Noto Sans 16
 
-# font pango:DejaVu Sans Mono 18
+title_align center
+
+
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 # }}}1
 # {{{1 startup
-exec --no-startup-id setxkbmap -option altwin:swap_lalt_lwin
+exec --no-startup-id setxkbmap -option altwin:swap_lalt_lwin -option caps:escape
 exec --no-startup-id nitrogen --restore
 # }}}
 # {{{ ...
@@ -18,45 +21,53 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-floating_modifier $mod
+floating_modifier $oskey
+
 # }}}1
 # {{{1 my hotkeys
-bindsym $mod+u exec       "export T_THEME='molokai'; urxvt -name dmonokai"
-bindsym $mod+Shift+u exec "export T_THEME='gruvbox'; urxvt -name gruvds"
-bindsym $mod+v exec gvim
-bindsym $mod+g exec firefox
-bindsym $mod+e exec thunar
-bindsym $mod+b exec blender
+bindsym $oskey+u exec       "export T_THEME='arcadia'; urxvt -name arcadia"
+bindsym $oskey+Shift+u exec "export T_THEME='gruvbox'; urxvt -name gruvds"
+bindsym $oskey+$alt+Control+u exec "export T_THEME='zenburn'; urxvt -name Zenburn"
+bindsym $oskey+v exec gvim
+bindsym $oskey+g exec firefox
+bindsym $oskey+e exec thunar
+bindsym $oskey+Shift+d exec thunar ~/Desktop
+
+bindsym $oskey+Shift+f exec thunar ~/Documents
+bindsym $oskey+b exec blender
+bindsym $oskey+p exec sh -c 'export PATH=/home/user/anaconda3/bin:$PATH && urxvt -e ipython3 --classic --no-banner --no-confirm-exit'
+bindsym $oskey+a exec "gvim -c 'cd ~/Desktop/learning-gtk-oof/' -c 'so proj.vim'"
+
 # }}}1
 # {{{1 section B
-bindsym $mod+Return exec urxvt
-bindsym $mod+Shift+q kill
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-bindsym $mod+Shift+o split h
-bindsym $mod+o split v
-bindsym $mod+f fullscreen toggle
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+h layout toggle split
-bindsym $mod+Shift+z floating toggle
-bindsym $mod+z focus mode_toggle
-bindsym $mod+a focus parent
-#bindsym $mod+d focus child
+bindsym $oskey+Return exec urxvt
+bindsym $oskey+Shift+q kill
+bindsym $oskey+j focus left
+bindsym $oskey+k focus down
+bindsym $oskey+l focus up
+bindsym $oskey+semicolon focus right
+bindsym $oskey+Left focus left
+bindsym $oskey+Down focus down
+bindsym $oskey+Up focus up
+bindsym $oskey+Right focus right
+bindsym $oskey+Shift+j move left
+bindsym $oskey+Shift+k move down
+bindsym $oskey+Shift+l move up
+bindsym $oskey+Shift+semicolon move right
+bindsym $oskey+Shift+Left move left
+bindsym $oskey+Shift+Down move down
+bindsym $oskey+Shift+Up move up
+bindsym $oskey+Shift+Right move right
+bindsym $oskey+Shift+o split h
+bindsym $oskey+o split v
+bindsym $oskey+f fullscreen toggle
+bindsym $oskey+s layout stacking
+bindsym $oskey+w layout tabbed
+bindsym $oskey+h layout toggle split
+bindsym $oskey+Shift+z floating toggle
+bindsym $oskey+z focus mode_toggle
+# bindsym $oskey+a focus parent
+#bindsym $oskey+d focus child
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -67,29 +78,29 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+r restart
-bindsym $mod+Shift+h exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $oskey+1 workspace number $ws1
+bindsym $oskey+2 workspace number $ws2
+bindsym $oskey+3 workspace number $ws3
+bindsym $oskey+4 workspace number $ws4
+bindsym $oskey+5 workspace number $ws5
+bindsym $oskey+6 workspace number $ws6
+bindsym $oskey+7 workspace number $ws7
+bindsym $oskey+8 workspace number $ws8
+bindsym $oskey+9 workspace number $ws9
+bindsym $oskey+0 workspace number $ws10
+bindsym $oskey+Shift+1 move container to workspace number $ws1
+bindsym $oskey+Shift+2 move container to workspace number $ws2
+bindsym $oskey+Shift+3 move container to workspace number $ws3
+bindsym $oskey+Shift+4 move container to workspace number $ws4
+bindsym $oskey+Shift+5 move container to workspace number $ws5
+bindsym $oskey+Shift+6 move container to workspace number $ws6
+bindsym $oskey+Shift+7 move container to workspace number $ws7
+bindsym $oskey+Shift+8 move container to workspace number $ws8
+bindsym $oskey+Shift+9 move container to workspace number $ws9
+bindsym $oskey+Shift+0 move container to workspace number $ws10
+bindsym $oskey+Shift+c reload
+bindsym $oskey+Shift+r restart
+bindsym $oskey+Shift+h exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 mode "resize" {
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
@@ -101,9 +112,9 @@ mode "resize" {
         bindsym Right resize grow width 10 px or 10 ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        bindsym $oskey+r mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $oskey+r mode "resize"
 
 # }}}1
 # {{{1 colors
@@ -115,6 +126,7 @@ client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #002B36
 bar {
+    position top
   status_command i3status
   colors {
     background #232323
@@ -127,6 +139,6 @@ bar {
     binding_mode       #FF5555 #FF5555 #F8F8F2
   }
 }
-bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-18' -p 'dmenu%'"
+bindsym $oskey+Escape exec --no-startup-id "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-18' -p 'dmenu%'"
 # }}}1
 

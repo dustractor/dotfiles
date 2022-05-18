@@ -69,6 +69,7 @@ sol.color12:      sol_base04
 sol.color13:      sol_base06
 sol.color14:      sol_base0F
 sol.color15:      sol_base07
+sol.font:   xft:Monofur for Powerline:size=12
 
 #define gruvds_base00 #32302f
 #define gruvds_base01 #3c3836
@@ -126,6 +127,7 @@ dmonokai.color14:     #2e706d
 dmonokai.color7:      #b9bcba
 dmonokai.color15:     #fdffb9
 dmonokai.colorBD:     #feffb2
+dmonokai.font:   xft:Monofur for Powerline:size=16
 
 pencillight.foreground:  #424242
 pencillight.background:  #f1f1f1
@@ -452,45 +454,45 @@ pencillight.colorBD:     #fb007a
 /* Broadcast.color9:      #ff7b6b */
 /* Broadcast.foreground:      #ffffff */
 
-/* ! Brogrammer */
-/* Brogrammer.background:  #131313 */
-/* Brogrammer.color0:      #1f1f1f */
-/* Brogrammer.color10:     #1dd361 */
-/* Brogrammer.color11:     #f3bd09 */
-/* Brogrammer.color12:     #1081d6 */
-/* Brogrammer.color13:     #5350b9 */
-/* Brogrammer.color14:     #0f7ddb */
-/* Brogrammer.color15:     #ffffff */
-/* Brogrammer.color1:      #f81118 */
-/* Brogrammer.color2:      #2dc55e */
-/* Brogrammer.color3:      #ecba0f */
-/* Brogrammer.color4:      #2a84d2 */
-/* Brogrammer.color5:      #4e5ab7 */
-/* Brogrammer.color6:      #1081d6 */
-/* Brogrammer.color7:      #d6dbe5 */
-/* Brogrammer.color8:      #d6dbe5 */
-/* Brogrammer.color9:      #de352e */
-/* Brogrammer.foreground:      #d6dbe5 */
+! Brogrammer
+Brogrammer.background:  #131313
+Brogrammer.color0:      #1f1f1f
+Brogrammer.color10:     #1dd361
+Brogrammer.color11:     #f3bd09
+Brogrammer.color12:     #1081d6
+Brogrammer.color13:     #5350b9
+Brogrammer.color14:     #0f7ddb
+Brogrammer.color15:     #ffffff
+Brogrammer.color1:      #f81118
+Brogrammer.color2:      #2dc55e
+Brogrammer.color3:      #ecba0f
+Brogrammer.color4:      #2a84d2
+Brogrammer.color5:      #4e5ab7
+Brogrammer.color6:      #1081d6
+Brogrammer.color7:      #d6dbe5
+Brogrammer.color8:      #d6dbe5
+Brogrammer.color9:      #de352e
+Brogrammer.foreground:      #d6dbe5
 
-/* ! C64 */
-/* C64.background:  #40318d */
-/* C64.color0:      #090300 */
-/* C64.color10:     #55a049 */
-/* C64.color11:     #bfce72 */
-/* C64.color12:     #40318d */
-/* C64.color13:     #8b3f96 */
-/* C64.color14:     #67b6bd */
-/* C64.color15:     #f7f7f7 */
-/* C64.color1:      #883932 */
-/* C64.color2:      #55a049 */
-/* C64.color3:      #bfce72 */
-/* C64.color4:      #40318d */
-/* C64.color5:      #8b3f96 */
-/* C64.color6:      #67b6bd */
-/* C64.color7:      #ffffff */
-/* C64.color8:      #000000 */
-/* C64.color9:      #883932 */
-/* C64.foreground:      #ffffff */
+! C64
+C64.background:  #40318d
+C64.color0:      #090300
+C64.color10:     #55a049
+C64.color11:     #bfce72
+C64.color12:     #40318d
+C64.color13:     #8b3f96
+C64.color14:     #67b6bd
+C64.color15:     #f7f7f7
+C64.color1:      #883932
+C64.color2:      #55a049
+C64.color3:      #bfce72
+C64.color4:      #40318d
+C64.color5:      #8b3f96
+C64.color6:      #67b6bd
+C64.color7:      #ffffff
+C64.color8:      #000000
+C64.color9:      #883932
+C64.foreground:      #ffffff
 
 /* ! Chalk */
 /* Chalk.background:  #2b2d2e */
@@ -3244,25 +3246,25 @@ Cobalt2.foreground:      #bbbbbb
 /* Wryan.color9:      #bf4d80 */
 /* Wryan.foreground:      #899ca1 */
 
-/* ! Zenburn */
-/* Zenburn.background:  #3f3f3f */
-/* Zenburn.color0:      #4d4d4d */
-/* Zenburn.color10:     #c3bf9f */
-/* Zenburn.color11:     #e0cf9f */
-/* Zenburn.color12:     #94bff3 */
-/* Zenburn.color13:     #ec93d3 */
-/* Zenburn.color14:     #93e0e3 */
-/* Zenburn.color15:     #ffffff */
-/* Zenburn.color1:      #705050 */
-/* Zenburn.color2:      #60b48a */
-/* Zenburn.color3:      #f0dfaf */
-/* Zenburn.color4:      #506070 */
-/* Zenburn.color5:      #dc8cc3 */
-/* Zenburn.color6:      #8cd0d3 */
-/* Zenburn.color7:      #dcdccc */
-/* Zenburn.color8:      #709080 */
-/* Zenburn.color9:      #dca3a3 */
-/* Zenburn.foreground:      #dcdccc */
+! Zenburn
+Zenburn.background:  #3f3f3f
+Zenburn.color0:      #4d4d4d
+Zenburn.color10:     #c3bf9f
+Zenburn.color11:     #e0cf9f
+Zenburn.color12:     #94bff3
+Zenburn.color13:     #ec93d3
+Zenburn.color14:     #93e0e3
+Zenburn.color15:     #ffffff
+Zenburn.color1:      #705050
+Zenburn.color2:      #60b48a
+Zenburn.color3:      #f0dfaf
+Zenburn.color4:      #506070
+Zenburn.color5:      #dc8cc3
+Zenburn.color6:      #8cd0d3
+Zenburn.color7:      #dcdccc
+Zenburn.color8:      #709080
+Zenburn.color9:      #dca3a3
+Zenburn.foreground:      #dcdccc
 
 /* ! apple-bright */
 /* apple-bright.background:   #ccbbb0 */
@@ -3304,105 +3306,105 @@ Cobalt2.foreground:      #bbbbbb
 /* apple-dark.color9:       #b33e65 */
 /* apple-dark.foreground:       #b3a49a */
 
-/* ! arcadia */
-/* arcadia.background:   #303030 */
-/* arcadia.color0:       #1c1c1c */
-/* arcadia.color10:      #008787 */
-/* arcadia.color11:      #dfaf00 */
-/* arcadia.color12:      #5f87af */
-/* arcadia.color13:      #875f87 */
-/* arcadia.color14:      #0087af */
-/* arcadia.color15:      #e4e4e4 */
-/* arcadia.color1:       #af005f */
-/* arcadia.color2:       #1c5f5f */
-/* arcadia.color3:       #af871c */
-/* arcadia.color4:       #1c5f87 */
-/* arcadia.color5:       #5f1c5f */
-/* arcadia.color6:       #005f87 */
-/* arcadia.color7:       #afafaf */
-/* arcadia.color8:       #303030 */
-/* arcadia.color9:       #af5f87 */
-/* arcadia.foreground:       #afafaf */
+! arcadia
+arcadia.background:   #303030
+arcadia.color0:       #1c1c1c
+arcadia.color10:      #008787
+arcadia.color11:      #dfaf00
+arcadia.color12:      #5f87af
+arcadia.color13:      #875f87
+arcadia.color14:      #0087af
+arcadia.color15:      #e4e4e4
+arcadia.color1:       #af005f
+arcadia.color2:       #1c5f5f
+arcadia.color3:       #af871c
+arcadia.color4:       #1c5f87
+arcadia.color5:       #5f1c5f
+arcadia.color6:       #005f87
+arcadia.color7:       #afafaf
+arcadia.color8:       #303030
+arcadia.color9:       #af5f87
+arcadia.foreground:       #afafaf
 
-/* ! arcadia_Midnight */
-/* arcadia_Midnight.background:   #121212 */
-/* arcadia_Midnight.color0:       #121212 */
-/* arcadia_Midnight.color10:      #008787 */
-/* arcadia_Midnight.color11:      #dfaf00 */
-/* arcadia_Midnight.color12:      #5f87af */
-/* arcadia_Midnight.color13:      #875f87 */
-/* arcadia_Midnight.color14:      #0087af */
-/* arcadia_Midnight.color15:      #e4e4e4 */
-/* arcadia_Midnight.color1:       #af005f */
-/* arcadia_Midnight.color2:       #1c5f5f */
-/* arcadia_Midnight.color3:       #af871c */
-/* arcadia_Midnight.color4:       #1c5f87 */
-/* arcadia_Midnight.color5:       #5f1c5f */
-/* arcadia_Midnight.color6:       #005f87 */
-/* arcadia_Midnight.color7:       #afafaf */
-/* arcadia_Midnight.color8:       #585858 */
-/* arcadia_Midnight.color9:       #af5f87 */
-/* arcadia_Midnight.foreground:       #afafaf */
+! arcadia_Midnight
+arcadia_Midnight.background:   #121212
+arcadia_Midnight.color0:       #121212
+arcadia_Midnight.color10:      #008787
+arcadia_Midnight.color11:      #dfaf00
+arcadia_Midnight.color12:      #5f87af
+arcadia_Midnight.color13:      #875f87
+arcadia_Midnight.color14:      #0087af
+arcadia_Midnight.color15:      #e4e4e4
+arcadia_Midnight.color1:       #af005f
+arcadia_Midnight.color2:       #1c5f5f
+arcadia_Midnight.color3:       #af871c
+arcadia_Midnight.color4:       #1c5f87
+arcadia_Midnight.color5:       #5f1c5f
+arcadia_Midnight.color6:       #005f87
+arcadia_Midnight.color7:       #afafaf
+arcadia_Midnight.color8:       #585858
+arcadia_Midnight.color9:       #af5f87
+arcadia_Midnight.foreground:       #afafaf
 
-/* ! arcadia_Pitch */
-/* arcadia_Pitch.background:   #080808 */
-/* arcadia_Pitch.color0:       #080808 */
-/* arcadia_Pitch.color10:      #008787 */
-/* arcadia_Pitch.color11:      #dfaf00 */
-/* arcadia_Pitch.color12:      #5f87af */
-/* arcadia_Pitch.color13:      #875f87 */
-/* arcadia_Pitch.color14:      #0087af */
-/* arcadia_Pitch.color15:      #e4e4e4 */
-/* arcadia_Pitch.color1:       #af005f */
-/* arcadia_Pitch.color2:       #1c5f5f */
-/* arcadia_Pitch.color3:       #af871c */
-/* arcadia_Pitch.color4:       #1c5f87 */
-/* arcadia_Pitch.color5:       #5f1c5f */
-/* arcadia_Pitch.color6:       #005f87 */
-/* arcadia_Pitch.color7:       #afafaf */
-/* arcadia_Pitch.color8:       #4e4e4e */
-/* arcadia_Pitch.color9:       #af5f87 */
-/* arcadia_Pitch.foreground:       #afafaf */
+! arcadia_Pitch
+arcadia_Pitch.background:   #080808
+arcadia_Pitch.color0:       #080808
+arcadia_Pitch.color10:      #008787
+arcadia_Pitch.color11:      #dfaf00
+arcadia_Pitch.color12:      #5f87af
+arcadia_Pitch.color13:      #875f87
+arcadia_Pitch.color14:      #0087af
+arcadia_Pitch.color15:      #e4e4e4
+arcadia_Pitch.color1:       #af005f
+arcadia_Pitch.color2:       #1c5f5f
+arcadia_Pitch.color3:       #af871c
+arcadia_Pitch.color4:       #1c5f87
+arcadia_Pitch.color5:       #5f1c5f
+arcadia_Pitch.color6:       #005f87
+arcadia_Pitch.color7:       #afafaf
+arcadia_Pitch.color8:       #4e4e4e
+arcadia_Pitch.color9:       #af5f87
+arcadia_Pitch.foreground:       #afafaf
 
-/* ! arcadia_Sunset */
-/* arcadia_Sunset.background:   #262626 */
-/* arcadia_Sunset.color0:       #262626 */
-/* arcadia_Sunset.color10:      #008787 */
-/* arcadia_Sunset.color11:      #dfaf00 */
-/* arcadia_Sunset.color12:      #5f87af */
-/* arcadia_Sunset.color13:      #875f87 */
-/* arcadia_Sunset.color14:      #0087af */
-/* arcadia_Sunset.color15:      #e4e4e4 */
-/* arcadia_Sunset.color1:       #af005f */
-/* arcadia_Sunset.color2:       #1c5f5f */
-/* arcadia_Sunset.color3:       #af871c */
-/* arcadia_Sunset.color4:       #1c5f87 */
-/* arcadia_Sunset.color5:       #5f1c5f */
-/* arcadia_Sunset.color6:       #005f87 */
-/* arcadia_Sunset.color7:       #afafaf */
-/* arcadia_Sunset.color8:       #6c6c6c */
-/* arcadia_Sunset.color9:       #af5f87 */
-/* arcadia_Sunset.foreground:       #afafaf */
+! arcadia_Sunset
+arcadia_Sunset.background:   #262626
+arcadia_Sunset.color0:       #262626
+arcadia_Sunset.color10:      #008787
+arcadia_Sunset.color11:      #dfaf00
+arcadia_Sunset.color12:      #5f87af
+arcadia_Sunset.color13:      #875f87
+arcadia_Sunset.color14:      #0087af
+arcadia_Sunset.color15:      #e4e4e4
+arcadia_Sunset.color1:       #af005f
+arcadia_Sunset.color2:       #1c5f5f
+arcadia_Sunset.color3:       #af871c
+arcadia_Sunset.color4:       #1c5f87
+arcadia_Sunset.color5:       #5f1c5f
+arcadia_Sunset.color6:       #005f87
+arcadia_Sunset.color7:       #afafaf
+arcadia_Sunset.color8:       #6c6c6c
+arcadia_Sunset.color9:       #af5f87
+arcadia_Sunset.foreground:       #afafaf
 
-/* ! arcadia_Twilight */
-/* arcadia_Twilight.background:   #1c1c1c */
-/* arcadia_Twilight.color0:       #1c1c1c */
-/* arcadia_Twilight.color10:      #008787 */
-/* arcadia_Twilight.color11:      #dfaf00 */
-/* arcadia_Twilight.color12:      #5f87af */
-/* arcadia_Twilight.color13:      #875f87 */
-/* arcadia_Twilight.color14:      #0087af */
-/* arcadia_Twilight.color15:      #e4e4e4 */
-/* arcadia_Twilight.color1:       #af005f */
-/* arcadia_Twilight.color2:       #1c5f5f */
-/* arcadia_Twilight.color3:       #af871c */
-/* arcadia_Twilight.color4:       #1c5f87 */
-/* arcadia_Twilight.color5:       #5f1c5f */
-/* arcadia_Twilight.color6:       #005f87 */
-/* arcadia_Twilight.color7:       #afafaf */
-/* arcadia_Twilight.color8:       #626262 */
-/* arcadia_Twilight.color9:       #af5f87 */
-/* arcadia_Twilight.foreground:       #afafaf */
+! arcadia_Twilight
+arcadia_Twilight.background:   #1c1c1c
+arcadia_Twilight.color0:       #1c1c1c
+arcadia_Twilight.color10:      #008787
+arcadia_Twilight.color11:      #dfaf00
+arcadia_Twilight.color12:      #5f87af
+arcadia_Twilight.color13:      #875f87
+arcadia_Twilight.color14:      #0087af
+arcadia_Twilight.color15:      #e4e4e4
+arcadia_Twilight.color1:       #af005f
+arcadia_Twilight.color2:       #1c5f5f
+arcadia_Twilight.color3:       #af871c
+arcadia_Twilight.color4:       #1c5f87
+arcadia_Twilight.color5:       #5f1c5f
+arcadia_Twilight.color6:       #005f87
+arcadia_Twilight.color7:       #afafaf
+arcadia_Twilight.color8:       #626262
+arcadia_Twilight.color9:       #af5f87
+arcadia_Twilight.foreground:       #afafaf
 
 /* ! autumn */
 /* autumn.background:   #1b1b1b */

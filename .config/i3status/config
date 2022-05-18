@@ -8,25 +8,25 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = false
+        colors = true
         interval = 5
 }
 
-#order += "ipv6"
-#order += "wireless _first_"
+# order += "ipv6"
+order += "wireless _first_"
 order += "ethernet _first_"
 order += "disk /"
 order += "load"
 order += "memory"
 order += "tztime local"
-#ipv6 {
-#    format = "<span color='#FF00FF'>%ip</span>"
-#}
+# ipv6 {
+   # format = "%ip"
+# }
 
-#wireless _first_ {
-#        format_up = "W: (%quality at %essid) %ip"
-#        format_down = "W: down"
-#}
+wireless _first_ {
+       format_up = "W: (%quality) %ip"
+       format_down = "W: down"
+}
 
 ethernet _first_ {
         format_up = "E: %ip (%speed)"

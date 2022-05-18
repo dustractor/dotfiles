@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ipython3
+Comment=
+Exec=sh -c 'export PATH=/home/user/anaconda3/bin:$PATH && urxvt -e ipython3'
+Icon=python
+Path=
+Terminal=false
+StartupNotify=true

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=python3 docs
+Comment=
+Icon=user-bookmarks
+Exec=firefox file:///usr/share/doc/python3-doc/html/index.html
+Path=
+Terminal=false
+StartupNotify=false

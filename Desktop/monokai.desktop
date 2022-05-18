@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=monokai
+Comment=
+Exec=sh -c 'export T_THEME=molokai ; urxvt -name dmonokai'
+Icon=
+Path=
+Terminal=false
+StartupNotify=false
