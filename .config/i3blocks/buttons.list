@@ -1,0 +1,6 @@
+
+firefox:firefox
+urxvt:export T_THEME='arcadia'; urxvt -name arcadia
+
+thunar:thunar
+

@@ -29,18 +29,29 @@
 command=$SCRIPT_DIR/$BLOCK_NAME
 separator_block_width=15
 markup=none
-# ...
+# {{{1 buttons
+# ~/.config/i3blocks/buttons.py
+# ~/.config/i3blocks/buttons.list
+# :r !python ~/.config/i3blocks/buttons.py
+#{{{2 product of the above
+
+[firefox]
+name=firefox
+full_text=firefox
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec firefox
 
 [urxvt]
 name=urxvt
 full_text=urxvt
-command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg --q exec urxvt
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec export T_THEME='arcadia'; urxvt -name arcadia
 
 [thunar]
 name=thunar
 full_text=thunar
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec thunar
 
+# }}}2
+# }}}1
 # Date Time
 #
 [time]
