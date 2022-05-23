@@ -28,7 +28,7 @@
 # Change $SCRIPT_DIR to the location of your scripts!
 command=$SCRIPT_DIR/$BLOCK_NAME
 separator_block_width=15
-markup=none
+markup=pango
 # {{{1 buttons
 # ~/.config/i3blocks/buttons.py
 # ~/.config/i3blocks/buttons.list
@@ -37,17 +37,17 @@ markup=none
 
 [firefox]
 name=firefox
-full_text=firefox
+full_text=
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec firefox
 
 [urxvt]
 name=urxvt
-full_text=urxvt
+full_text=
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec export T_THEME='arcadia'; urxvt -name arcadia
 
 [thunar]
 name=thunar
-full_text=thunar
+full_text=
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec thunar
 
 # }}}2
@@ -55,7 +55,7 @@ command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec thunar
 # Date Time
 #
 [time]
-command=date '+%Y-%m-%d %H:%M:%S'
+command=date '%I:%M'
 interval=5
 
 # Key indicators

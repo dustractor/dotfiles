@@ -14,7 +14,8 @@ set $ws10 "10"
 set $oskey Mod4
 set $alt Mod1
 # {{{1 font
-font pango:Noto Sans 16
+# font pango:Noto Sans 16
+font pango:monofur Nerd Font Complete 16
 
 title_align center
 
@@ -45,9 +46,11 @@ bindsym $oskey+Shift+d exec thunar ~/Desktop
 
 bindsym $oskey+Shift+f exec thunar ~/Documents
 bindsym $oskey+b exec blender
+bindsym $oskey+Shift+b exec urxvt -e blender
 bindsym $oskey+p exec sh -c 'export PATH=/home/user/anaconda3/bin:$PATH && urxvt -e ipython3 --classic --no-banner --no-confirm-exit'
 bindsym $oskey+a exec "gvim -c 'cd ~/Desktop/pygtkproj' -c 'so proj.vim'"
 bindsym $oskey+Return exec "export T_THEME='arcadia'; urxvt -name arcadia"
+bindsym $oskey+$alt+Control+w exec gvim ~/vimwiki/index.wiki
 bindsym $oskey+Shift+q kill
 bindsym $oskey+j focus left
 bindsym $oskey+k focus down
