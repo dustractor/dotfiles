@@ -9,7 +9,7 @@ Xft.lcdfilter:  lcddefault
 URxvt.scrollBar: false
 URxvt.iso14755:    false
 URxvt.iso14755_52: false
-URxvt*font:   xft:Monofur for Powerline:size=24
+URxvt*font:   xft:monofur Nerd Font Mono:size=24
 URxvt.keysym.0xFF67:string:[12~
 urxvt.depth:32
 urxvt*blurRadius: 5
@@ -69,7 +69,7 @@ sol.color12:      sol_base04
 sol.color13:      sol_base06
 sol.color14:      sol_base0F
 sol.color15:      sol_base07
-sol.font:   xft:Monofur for Powerline:size=12
+sol.font:   xft:monofur Nerd Font Mono:size=14
 
 #define gruvds_base00 #32302f
 #define gruvds_base01 #3c3836
@@ -127,7 +127,7 @@ dmonokai.color14:     #2e706d
 dmonokai.color7:      #b9bcba
 dmonokai.color15:     #fdffb9
 dmonokai.colorBD:     #feffb2
-dmonokai.font:   xft:Monofur for Powerline:size=16
+dmonokai.font:   xft:monofur Nerd Font Mono:size=14
 
 pencillight.foreground:  #424242
 pencillight.background:  #f1f1f1

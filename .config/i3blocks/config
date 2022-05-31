@@ -27,36 +27,67 @@
 # Each block command defaults to the script name to avoid boilerplate.
 # Change $SCRIPT_DIR to the location of your scripts!
 command=$SCRIPT_DIR/$BLOCK_NAME
-separator_block_width=15
+separator_block_width=25
 markup=pango
 # {{{1 buttons
 # ~/.config/i3blocks/buttons.py
 # ~/.config/i3blocks/buttons.list
-# :r !python ~/.config/i3blocks/buttons.py
-#{{{2 product of the above
-
+# g/^[#][ ]BLOCKS_START/.+1,/^[#][ ]BLOCKS_END/-1 d | exe "norm k" | :r !python3 ~/.config/i3blocks/buttons.py
+#{{{2 product of the above line ^
+# BLOCKS_START
 [firefox]
 name=firefox
 full_text=
+align=left
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec firefox
 
 [urxvt]
 name=urxvt
 full_text=
+align=left
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec export T_THEME='arcadia'; urxvt -name arcadia
 
 [thunar]
 name=thunar
 full_text=
+align=left
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec thunar
 
+[vivaldi]
+name=vivaldi
+full_text=爵
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec vivaldi
+
+[nitrogen]
+name=nitrogen
+full_text=
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec nitrogen
+
+[blender]
+name=blender
+full_text=
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec blender
+
+[krita]
+name=krita
+full_text=
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec krita
+
+# BLOCKS_END
 # }}}2
 # }}}1
+[blank]
+full_text= 
+separator_block_width=250
 # Date Time
 #
 [time]
-command=date '%I:%M'
-interval=5
+command=date +%I:%M
+interval=15
 
 # Key indicators
 #

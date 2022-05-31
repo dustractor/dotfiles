@@ -1,6 +1,7 @@
-
-firefox:firefox
-urxvt:export T_THEME='arcadia'; urxvt -name arcadia
-
-thunar:thunar
-
+|firefox:firefox
+|urxvt:export T_THEME='arcadia'; urxvt -name arcadia
+|thunar:thunar
+爵|vivaldi:vivaldi
+|nitrogen:nitrogen
+|blender:blender
+|krita:krita

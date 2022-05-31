@@ -19,7 +19,6 @@ font pango:monofur Nerd Font Complete 16
 
 title_align center
 
-
 # {{{1 startup
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
@@ -150,8 +149,9 @@ client.background       #002B36
 # {{{1 i3blocks bar
 # ~/.config/i3blocks/config
 bar {
+    separator_symbol " "
     position top
-    font pango:monofur Nerd Font Complete 24
+    font pango:monofur Nerd Font Complete 14
     colors {
     background #232323
     focused_workspace  #FF00FF #000000 #00FF00
