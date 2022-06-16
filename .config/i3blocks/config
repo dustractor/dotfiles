@@ -26,15 +26,44 @@
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 # Change $SCRIPT_DIR to the location of your scripts!
-command=$SCRIPT_DIR/$BLOCK_NAME
+# command=$SCRIPT_DIR/$BLOCK_NAME
 separator_block_width=25
+min_width=40
 markup=pango
 # {{{1 buttons
+#
+[workspace1]
+name=workspace1
+full_text=1
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q workspace 1
+[workspace2]
+name=workspace2
+full_text=2
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q workspace 2
+[workspace3]
+name=workspace3
+full_text=3
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q workspace 3
+[workspace4]
+name=workspace4
+full_text=4
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q workspace 4
+[workspace5]
+name=workspace5
+full_text=5
+align=left
+command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q workspace 5
 # ~/.config/i3blocks/buttons.py
 # ~/.config/i3blocks/buttons.list
 # g/^[#][ ]BLOCKS_START/.+1,/^[#][ ]BLOCKS_END/-1 d | exe "norm k" | :r !python3 ~/.config/i3blocks/buttons.py
 #{{{2 product of the above line ^
 # BLOCKS_START
+
+
 [firefox]
 name=firefox
 full_text=
@@ -76,6 +105,7 @@ name=krita
 full_text=
 align=left
 command=[[ -z "$BLOCK_BUTTON" ]] || i3-msg -q exec krita
+
 
 # BLOCKS_END
 # }}}2

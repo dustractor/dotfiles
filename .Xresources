@@ -2834,25 +2834,26 @@ Cobalt2.foreground:      #bbbbbb
 /* The_Hulk.color9:      #8dff2a */
 /* The_Hulk.foreground:      #d9d8d1 */
 
-/* ! Tomorrow */
-/* Tomorrow.background:  #ffffff */
-/* Tomorrow.color0:      #000000 */
-/* Tomorrow.color10:     #718c00 */
-/* Tomorrow.color11:     #eab700 */
-/* Tomorrow.color12:     #4271ae */
-/* Tomorrow.color13:     #8959a8 */
-/* Tomorrow.color14:     #3e999f */
-/* Tomorrow.color15:     #ffffff */
-/* Tomorrow.color1:      #c82829 */
-/* Tomorrow.color2:      #718c00 */
-/* Tomorrow.color3:      #eab700 */
-/* Tomorrow.color4:      #4271ae */
-/* Tomorrow.color5:      #8959a8 */
-/* Tomorrow.color6:      #3e999f */
-/* Tomorrow.color7:      #ffffff */
-/* Tomorrow.color8:      #000000 */
-/* Tomorrow.color9:      #c82829 */
-/* Tomorrow.foreground:      #ffffff */
+! Tomorrow
+Tomorrow.font:   xft:monofur Nerd Font Mono:size=14
+Tomorrow.background:  #ffffff
+Tomorrow.color0:      #000000
+Tomorrow.color10:     #718c00
+Tomorrow.color11:     #eab700
+Tomorrow.color12:     #4271ae
+Tomorrow.color13:     #8959a8
+Tomorrow.color14:     #3e999f
+Tomorrow.color15:     #eeeeee
+Tomorrow.color1:      #c82829
+Tomorrow.color2:      #718c00
+Tomorrow.color3:      #eab700
+Tomorrow.color4:      #4271ae
+Tomorrow.color5:      #8959a8
+Tomorrow.color6:      #3e999f
+Tomorrow.color7:      #ffffff
+Tomorrow.color8:      #000000
+Tomorrow.color9:      #c82829
+Tomorrow.foreground:      #101010
 
 /* ! TomorrowNight */
 /* TomorrowNight.color0:       #000000 */

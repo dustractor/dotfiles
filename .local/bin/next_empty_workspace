@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+# vim: ft=python
+
+from json import loads
+from subprocess import run
+from shlex import split
+
+def main():
+    raw = run(split("i3-msg -t get_workspaces"),capture_output=True)
+    json = loads(raw.stdout.decode())
+    nums = [t["num"] for t in json]
+    focused = [t["num"] for t in json if t["focused"]]
+    focused = focused.pop()
+    limit = 7 # TODO make this configurable from env
+    empty = [n for n in range(1,limit+1) if n not in nums]
+    above = [n for n in empty if n > focused]
+    below = [n for n in empty if n < focused]
+    next_empty = min(above) if above else (min(below) if below else 1)
+    return next_empty
+
+if __name__ == "__main__":
+    print(main())
+

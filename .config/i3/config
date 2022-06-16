@@ -36,12 +36,449 @@ floating_modifier $oskey
 for_window [title="Hello World!"] floating enable
 
 # {{{1 hotkeys
+# {{{2 script util
+# :r !python3 ./modcomb.py
+# }}}2
+# {{{2 generated
+########################################################################
+# {{{3 Control
+# bindsym Control+a ___
+# bindsym Control+b ___
+# bindsym Control+c ___
+# bindsym Control+d ___
+# bindsym Control+e ___
+# bindsym Control+f ___
+# bindsym Control+g ___
+# bindsym Control+h ___
+# bindsym Control+i ___
+# bindsym Control+j ___
+# bindsym Control+k ___
+# bindsym Control+l ___
+# bindsym Control+m ___
+# bindsym Control+n ___
+# bindsym Control+o ___
+# bindsym Control+p ___
+# bindsym Control+q ___
+# bindsym Control+r ___
+# bindsym Control+s ___
+# bindsym Control+t ___
+# bindsym Control+u ___
+# bindsym Control+v ___
+# bindsym Control+w ___
+# bindsym Control+x ___
+# bindsym Control+y ___
+# bindsym Control+z ___
+# }}}3
+# {{{3 $alt
+# bindsym $alt+a ___
+# bindsym $alt+b ___
+# bindsym $alt+c ___
+# bindsym $alt+d ___
+# bindsym $alt+e ___
+# bindsym $alt+f ___
+# bindsym $alt+g ___
+# bindsym $alt+h ___
+# bindsym $alt+i ___
+# bindsym $alt+j ___
+# bindsym $alt+k ___
+# bindsym $alt+l ___
+# bindsym $alt+m ___
+# bindsym $alt+n ___
+# bindsym $alt+o ___
+# bindsym $alt+p ___
+# bindsym $alt+q ___
+# bindsym $alt+r ___
+# bindsym $alt+s ___
+# bindsym $alt+t ___
+# bindsym $alt+u ___
+# bindsym $alt+v ___
+# bindsym $alt+w ___
+# bindsym $alt+x ___
+# bindsym $alt+y ___
+# bindsym $alt+z ___
+# }}}3
+# {{{3 Shift
+# bindsym Shift+a ___
+# bindsym Shift+b ___
+# bindsym Shift+c ___
+# bindsym Shift+d ___
+# bindsym Shift+e ___
+# bindsym Shift+f ___
+# bindsym Shift+g ___
+# bindsym Shift+h ___
+# bindsym Shift+i ___
+# bindsym Shift+j ___
+# bindsym Shift+k ___
+# bindsym Shift+l ___
+# bindsym Shift+m ___
+# bindsym Shift+n ___
+# bindsym Shift+o ___
+# bindsym Shift+p ___
+# bindsym Shift+q ___
+# bindsym Shift+r ___
+# bindsym Shift+s ___
+# bindsym Shift+t ___
+# bindsym Shift+u ___
+# bindsym Shift+v ___
+# bindsym Shift+w ___
+# bindsym Shift+x ___
+# bindsym Shift+y ___
+# bindsym Shift+z ___
+# }}}3
+# {{{3 $oskey
+# bindsym $oskey+a ___
+# bindsym $oskey+b ___
+# bindsym $oskey+c ___
+# bindsym $oskey+d ___
+# bindsym $oskey+e ___
+# bindsym $oskey+f ___
+# bindsym $oskey+g ___
+# bindsym $oskey+h ___
+# bindsym $oskey+i ___
+# bindsym $oskey+j ___
+# bindsym $oskey+k ___
+# bindsym $oskey+l ___
+# bindsym $oskey+m ___
+# bindsym $oskey+n ___
+# bindsym $oskey+o ___
+# bindsym $oskey+p ___
+# bindsym $oskey+q ___
+# bindsym $oskey+r ___
+# bindsym $oskey+s ___
+# bindsym $oskey+t ___
+# bindsym $oskey+u ___
+# bindsym $oskey+v ___
+# bindsym $oskey+w ___
+# bindsym $oskey+x ___
+# bindsym $oskey+y ___
+# bindsym $oskey+z ___
+# }}}3
 
-# bindsym $oskey+a focus parent
-#bindsym $oskey+d focus child
+# {{{3 Control + $alt
+# bindsym Control+$alt+a ___
+# bindsym Control+$alt+b ___
+# bindsym Control+$alt+c ___
+# bindsym Control+$alt+d ___
+# bindsym Control+$alt+e ___
+# bindsym Control+$alt+f ___
+# bindsym Control+$alt+g ___
+# bindsym Control+$alt+h ___
+# bindsym Control+$alt+i ___
+# bindsym Control+$alt+j ___
+# bindsym Control+$alt+k ___
+# bindsym Control+$alt+l ___
+# bindsym Control+$alt+m ___
+# bindsym Control+$alt+n ___
+# bindsym Control+$alt+o ___
+# bindsym Control+$alt+p ___
+# bindsym Control+$alt+q ___
+# bindsym Control+$alt+r ___
+# bindsym Control+$alt+s ___
+# bindsym Control+$alt+t ___
+# bindsym Control+$alt+u ___
+# bindsym Control+$alt+v ___
+# bindsym Control+$alt+w ___
+# bindsym Control+$alt+x ___
+# bindsym Control+$alt+y ___
+# bindsym Control+$alt+z ___
+# }}}3
+# {{{3 Control + Shift
+# bindsym Control+Shift+a ___
+# bindsym Control+Shift+b ___
+# bindsym Control+Shift+c ___
+# bindsym Control+Shift+d ___
+# bindsym Control+Shift+e ___
+# bindsym Control+Shift+f ___
+# bindsym Control+Shift+g ___
+# bindsym Control+Shift+h ___
+# bindsym Control+Shift+i ___
+# bindsym Control+Shift+j ___
+# bindsym Control+Shift+k ___
+# bindsym Control+Shift+l ___
+# bindsym Control+Shift+m ___
+# bindsym Control+Shift+n ___
+# bindsym Control+Shift+o ___
+# bindsym Control+Shift+p ___
+# bindsym Control+Shift+q ___
+# bindsym Control+Shift+r ___
+# bindsym Control+Shift+s ___
+# bindsym Control+Shift+t ___
+# bindsym Control+Shift+u ___
+# bindsym Control+Shift+v ___
+# bindsym Control+Shift+w ___
+# bindsym Control+Shift+x ___
+# bindsym Control+Shift+y ___
+# bindsym Control+Shift+z ___
+# }}}3
+# {{{3 Control + $oskey
+# bindsym Control+$oskey+a ___
+# bindsym Control+$oskey+b ___
+# bindsym Control+$oskey+c ___
+# bindsym Control+$oskey+d ___
+# bindsym Control+$oskey+e ___
+# bindsym Control+$oskey+f ___
+# bindsym Control+$oskey+g ___
+# bindsym Control+$oskey+h ___
+# bindsym Control+$oskey+i ___
+# bindsym Control+$oskey+j ___
+# bindsym Control+$oskey+k ___
+# bindsym Control+$oskey+l ___
+# bindsym Control+$oskey+m ___
+# bindsym Control+$oskey+n ___
+# bindsym Control+$oskey+o ___
+# bindsym Control+$oskey+p ___
+# bindsym Control+$oskey+q ___
+# bindsym Control+$oskey+r ___
+# bindsym Control+$oskey+s ___
+# bindsym Control+$oskey+t ___
+# bindsym Control+$oskey+u ___
+# bindsym Control+$oskey+v ___
+# bindsym Control+$oskey+w ___
+# bindsym Control+$oskey+x ___
+# bindsym Control+$oskey+y ___
+# bindsym Control+$oskey+z ___
+# }}}3
+# {{{3 $alt + Shift
+# bindsym $alt+Shift+a ___
+# bindsym $alt+Shift+b ___
+# bindsym $alt+Shift+c ___
+# bindsym $alt+Shift+d ___
+# bindsym $alt+Shift+e ___
+# bindsym $alt+Shift+f ___
+# bindsym $alt+Shift+g ___
+# bindsym $alt+Shift+h ___
+# bindsym $alt+Shift+i ___
+# bindsym $alt+Shift+j ___
+# bindsym $alt+Shift+k ___
+# bindsym $alt+Shift+l ___
+# bindsym $alt+Shift+m ___
+# bindsym $alt+Shift+n ___
+# bindsym $alt+Shift+o ___
+# bindsym $alt+Shift+p ___
+# bindsym $alt+Shift+q ___
+# bindsym $alt+Shift+r ___
+# bindsym $alt+Shift+s ___
+# bindsym $alt+Shift+t ___
+# bindsym $alt+Shift+u ___
+# bindsym $alt+Shift+v ___
+# bindsym $alt+Shift+w ___
+# bindsym $alt+Shift+x ___
+# bindsym $alt+Shift+y ___
+# bindsym $alt+Shift+z ___
+# }}}3
+# {{{3 $alt + $oskey
+# bindsym $alt+$oskey+a ___
+# bindsym $alt+$oskey+b ___
+# bindsym $alt+$oskey+c ___
+# bindsym $alt+$oskey+d ___
+# bindsym $alt+$oskey+e ___
+# bindsym $alt+$oskey+f ___
+# bindsym $alt+$oskey+g ___
+# bindsym $alt+$oskey+h ___
+# bindsym $alt+$oskey+i ___
+# bindsym $alt+$oskey+j ___
+# bindsym $alt+$oskey+k ___
+# bindsym $alt+$oskey+l ___
+# bindsym $alt+$oskey+m ___
+# bindsym $alt+$oskey+n ___
+# bindsym $alt+$oskey+o ___
+# bindsym $alt+$oskey+p ___
+# bindsym $alt+$oskey+q ___
+# bindsym $alt+$oskey+r ___
+# bindsym $alt+$oskey+s ___
+# bindsym $alt+$oskey+t ___
+# bindsym $alt+$oskey+u ___
+# bindsym $alt+$oskey+v ___
+# bindsym $alt+$oskey+w ___
+# bindsym $alt+$oskey+x ___
+# bindsym $alt+$oskey+y ___
+# bindsym $alt+$oskey+z ___
+# }}}3
+# {{{3 Shift + $oskey
+# bindsym Shift+$oskey+a ___
+# bindsym Shift+$oskey+b ___
+# bindsym Shift+$oskey+c ___
+# bindsym Shift+$oskey+d ___
+# bindsym Shift+$oskey+e ___
+# bindsym Shift+$oskey+f ___
+# bindsym Shift+$oskey+g ___
+# bindsym Shift+$oskey+h ___
+# bindsym Shift+$oskey+i ___
+# bindsym Shift+$oskey+j ___
+# bindsym Shift+$oskey+k ___
+# bindsym Shift+$oskey+l ___
+# bindsym Shift+$oskey+m ___
+# bindsym Shift+$oskey+n ___
+# bindsym Shift+$oskey+o ___
+# bindsym Shift+$oskey+p ___
+# bindsym Shift+$oskey+q ___
+# bindsym Shift+$oskey+r ___
+# bindsym Shift+$oskey+s ___
+# bindsym Shift+$oskey+t ___
+# bindsym Shift+$oskey+u ___
+# bindsym Shift+$oskey+v ___
+# bindsym Shift+$oskey+w ___
+# bindsym Shift+$oskey+x ___
+# bindsym Shift+$oskey+y ___
+# bindsym Shift+$oskey+z ___
+# }}}3
 
-bindsym $oskey+$alt+Control+u exec "export T_THEME='zenburn'; urxvt -name Zenburn"
+# {{{3 Control + $alt + Shift
+# bindsym Control+$alt+Shift+a ___
+# bindsym Control+$alt+Shift+b ___
+# bindsym Control+$alt+Shift+c ___
+# bindsym Control+$alt+Shift+d ___
+# bindsym Control+$alt+Shift+e ___
+# bindsym Control+$alt+Shift+f ___
+# bindsym Control+$alt+Shift+g ___
+# bindsym Control+$alt+Shift+h ___
+# bindsym Control+$alt+Shift+i ___
+# bindsym Control+$alt+Shift+j ___
+# bindsym Control+$alt+Shift+k ___
+# bindsym Control+$alt+Shift+l ___
+# bindsym Control+$alt+Shift+m ___
+# bindsym Control+$alt+Shift+n ___
+# bindsym Control+$alt+Shift+o ___
+# bindsym Control+$alt+Shift+p ___
+# bindsym Control+$alt+Shift+q ___
+# bindsym Control+$alt+Shift+r ___
+# bindsym Control+$alt+Shift+s ___
+# bindsym Control+$alt+Shift+t ___
+# bindsym Control+$alt+Shift+u ___
+# bindsym Control+$alt+Shift+v ___
+# bindsym Control+$alt+Shift+w ___
+# bindsym Control+$alt+Shift+x ___
+# bindsym Control+$alt+Shift+y ___
+# bindsym Control+$alt+Shift+z ___
+# }}}3
+# {{{3 Control + $alt + $oskey
+# bindsym Control+$alt+$oskey+a ___
+# bindsym Control+$alt+$oskey+b ___
+# bindsym Control+$alt+$oskey+c ___
+# bindsym Control+$alt+$oskey+d ___
+# bindsym Control+$alt+$oskey+e ___
+# bindsym Control+$alt+$oskey+f ___
+# bindsym Control+$alt+$oskey+g ___
+# bindsym Control+$alt+$oskey+h ___
+# bindsym Control+$alt+$oskey+i ___
+# bindsym Control+$alt+$oskey+j ___
+# bindsym Control+$alt+$oskey+k ___
+# bindsym Control+$alt+$oskey+l ___
+# bindsym Control+$alt+$oskey+m ___
+# bindsym Control+$alt+$oskey+n ___
+# bindsym Control+$alt+$oskey+o ___
+# bindsym Control+$alt+$oskey+p ___
+# bindsym Control+$alt+$oskey+q ___
+# bindsym Control+$alt+$oskey+r ___
+# bindsym Control+$alt+$oskey+s ___
+# bindsym Control+$alt+$oskey+t ___
+# bindsym Control+$alt+$oskey+u ___
+# bindsym Control+$alt+$oskey+v ___
+# bindsym Control+$alt+$oskey+w ___
+# bindsym Control+$alt+$oskey+x ___
+# bindsym Control+$alt+$oskey+y ___
+# bindsym Control+$alt+$oskey+z ___
+# }}}3
+# {{{3 Control + Shift + $oskey
+# bindsym Control+Shift+$oskey+a ___
+# bindsym Control+Shift+$oskey+b ___
+# bindsym Control+Shift+$oskey+c ___
+# bindsym Control+Shift+$oskey+d ___
+# bindsym Control+Shift+$oskey+e ___
+# bindsym Control+Shift+$oskey+f ___
+# bindsym Control+Shift+$oskey+g ___
+# bindsym Control+Shift+$oskey+h ___
+# bindsym Control+Shift+$oskey+i ___
+# bindsym Control+Shift+$oskey+j ___
+# bindsym Control+Shift+$oskey+k ___
+# bindsym Control+Shift+$oskey+l ___
+# bindsym Control+Shift+$oskey+m ___
+# bindsym Control+Shift+$oskey+n ___
+# bindsym Control+Shift+$oskey+o ___
+# bindsym Control+Shift+$oskey+p ___
+# bindsym Control+Shift+$oskey+q ___
+# bindsym Control+Shift+$oskey+r ___
+# bindsym Control+Shift+$oskey+s ___
+# bindsym Control+Shift+$oskey+t ___
+# bindsym Control+Shift+$oskey+u ___
+# bindsym Control+Shift+$oskey+v ___
+# bindsym Control+Shift+$oskey+w ___
+# bindsym Control+Shift+$oskey+x ___
+# bindsym Control+Shift+$oskey+y ___
+# bindsym Control+Shift+$oskey+z ___
+# }}}3
+# {{{3 $alt + Shift + $oskey
+# bindsym $alt+Shift+$oskey+a ___
+# bindsym $alt+Shift+$oskey+b ___
+# bindsym $alt+Shift+$oskey+c ___
+# bindsym $alt+Shift+$oskey+d ___
+# bindsym $alt+Shift+$oskey+e ___
+# bindsym $alt+Shift+$oskey+f ___
+# bindsym $alt+Shift+$oskey+g ___
+# bindsym $alt+Shift+$oskey+h ___
+# bindsym $alt+Shift+$oskey+i ___
+# bindsym $alt+Shift+$oskey+j ___
+# bindsym $alt+Shift+$oskey+k ___
+# bindsym $alt+Shift+$oskey+l ___
+# bindsym $alt+Shift+$oskey+m ___
+# bindsym $alt+Shift+$oskey+n ___
+# bindsym $alt+Shift+$oskey+o ___
+# bindsym $alt+Shift+$oskey+p ___
+# bindsym $alt+Shift+$oskey+q ___
+# bindsym $alt+Shift+$oskey+r ___
+# bindsym $alt+Shift+$oskey+s ___
+# bindsym $alt+Shift+$oskey+t ___
+# bindsym $alt+Shift+$oskey+u ___
+# bindsym $alt+Shift+$oskey+v ___
+# bindsym $alt+Shift+$oskey+w ___
+# bindsym $alt+Shift+$oskey+x ___
+# bindsym $alt+Shift+$oskey+y ___
+# bindsym $alt+Shift+$oskey+z ___
+# }}}3
+
+# {{{3 Control + $alt + Shift + $oskey
+# bindsym Control+$alt+Shift+$oskey+a ___
+# bindsym Control+$alt+Shift+$oskey+b ___
+# bindsym Control+$alt+Shift+$oskey+c ___
+# bindsym Control+$alt+Shift+$oskey+d ___
+# bindsym Control+$alt+Shift+$oskey+e ___
+# bindsym Control+$alt+Shift+$oskey+f ___
+# bindsym Control+$alt+Shift+$oskey+g ___
+# bindsym Control+$alt+Shift+$oskey+h ___
+# bindsym Control+$alt+Shift+$oskey+i ___
+# bindsym Control+$alt+Shift+$oskey+j ___
+# bindsym Control+$alt+Shift+$oskey+k ___
+# bindsym Control+$alt+Shift+$oskey+l ___
+# bindsym Control+$alt+Shift+$oskey+m ___
+# bindsym Control+$alt+Shift+$oskey+n ___
+# bindsym Control+$alt+Shift+$oskey+o ___
+# bindsym Control+$alt+Shift+$oskey+p ___
+# bindsym Control+$alt+Shift+$oskey+q ___
+# bindsym Control+$alt+Shift+$oskey+r ___
+# bindsym Control+$alt+Shift+$oskey+s ___
+# bindsym Control+$alt+Shift+$oskey+t ___
+# bindsym Control+$alt+Shift+$oskey+u ___
+# bindsym Control+$alt+Shift+$oskey+v ___
+# bindsym Control+$alt+Shift+$oskey+w ___
+# bindsym Control+$alt+Shift+$oskey+x ___
+# bindsym Control+$alt+Shift+$oskey+y ___
+# bindsym Control+$alt+Shift+$oskey+z ___
+# }}}3
+
+########################################################################
+# }}}2
+
+# BEFORE {{{2
+# bindsym $oskey+Shift+[ focus parent
+# bindsym $oskey+Shift+] focus child
+
+# ~/.local/bin/next_empty_workspace
+bindsym $oskey+$alt+Control+u exec "export T_THEME='Tomorrow'; urxvt -name Tomorrow"
 bindsym $oskey+$alt+Control+w exec gvim ~/vimwiki/index.wiki
+bindsym $oskey+$alt+Control+p exec sh -c 'export PATH=/home/user/anaconda3/bin:$PATH && urxvt -e ipython3 --classic --no-banner --no-confirm-exit'
+bindsym $oskey+Control+Left exec "i3-msg workspace `next_empty_workspace -r`"
+bindsym $oskey+Control+Right exec "i3-msg workspace `next_empty_workspace`"
+bindsym Print exec scrot
 bindsym $oskey+Down focus down
 bindsym $oskey+Escape exec --no-startup-id "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-18' -p 'dmenu%'"
 bindsym $oskey+Left focus left
@@ -52,11 +489,13 @@ bindsym $oskey+Shift+Down move down
 bindsym $oskey+Shift+Left move left
 bindsym $oskey+Shift+Right move right
 bindsym $oskey+Shift+Up move up
+bindsym $oskey+Shift+a exec "export G_THEME='light';gvim -c 'cd `kvs --key MAIN`' -c 'so proj.vim'"
 bindsym $oskey+Shift+b exec urxvt -e blender
 bindsym $oskey+Shift+c reload
 bindsym $oskey+Shift+d exec thunar ~/Desktop
 bindsym $oskey+Shift+f exec thunar ~/Documents
 bindsym $oskey+Shift+h exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $oskey+Shift+i exec "gvim -c 'cd ~/.config/i3' -c 'e config'"
 bindsym $oskey+Shift+j move left
 bindsym $oskey+Shift+k move down
 bindsym $oskey+Shift+l move up
@@ -64,11 +503,12 @@ bindsym $oskey+Shift+o split h
 bindsym $oskey+Shift+q kill
 bindsym $oskey+Shift+r restart
 bindsym $oskey+Shift+semicolon move right
-bindsym $oskey+Shift+u exec "export T_THEME='gruvbox'; urxvt -name gruvds"
+bindsym $oskey+Shift+u exec "export T_THEME='pencil'; urxvt -name pencillight"
+bindsym $oskey+Shift+v exec "export G_THEME='light';gvim"
 bindsym $oskey+Shift+z floating toggle
 bindsym $oskey+Up focus up
 
-bindsym $oskey+a exec "gvim -c 'cd ~/Desktop/kvs' -c 'so proj.vim'"
+bindsym $oskey+a exec "gvim -c 'cd `kvs --key MAIN`' -c 'so proj.vim'"
 bindsym $oskey+b exec blender
 bindsym $oskey+e exec thunar
 bindsym $oskey+f fullscreen toggle
@@ -78,7 +518,6 @@ bindsym $oskey+j focus left
 bindsym $oskey+k focus down
 bindsym $oskey+l focus up
 bindsym $oskey+o split v
-bindsym $oskey+p exec sh -c 'export PATH=/home/user/anaconda3/bin:$PATH && urxvt -e ipython3 --classic --no-banner --no-confirm-exit'
 bindsym $oskey+s layout stacking
 bindsym $oskey+semicolon focus right
 bindsym $oskey+u exec       "export T_THEME='arcadia'; urxvt -name arcadia"
@@ -122,7 +561,7 @@ mode "resize" {
         bindsym $oskey+r mode "default"
 }
 bindsym $oskey+r mode "resize"
-
+# }}}2
 # {{{1 client colors
 # class                 border  bground text    indicator child_border
 client.focused          #002B36 #232323 #00a5F2 #00a5f0   #002B36
@@ -148,18 +587,20 @@ client.background       #002B36
 # }
 # {{{1 i3blocks bar
 # ~/.config/i3blocks/config
-bar {
-    separator_symbol " "
-    position top
-    font pango:monofur Nerd Font Complete 14
-    colors {
-    background #232323
-    focused_workspace  #FF00FF #000000 #00FF00
-    active_workspace   #282A36 #44475A #F8F8F2
-    inactive_workspace #282A36 #282A36 #BFBFBF
-    urgent_workspace   #FF5555 #FF5555 #F8F8F2
-    binding_mode       #FF5555 #FF5555 #F8F8F2
-    }
-  status_command i3blocks
-}
+# bar {
+#     separator_symbol " "
+#     position top
+#     font pango:monofur Nerd Font Complete 14
+#     colors {
+#     background #232323
+#     focused_workspace  #FF00FF #000000 #00FF00
+#     active_workspace   #282A36 #44475A #F8F8F2
+#     inactive_workspace #282A36 #282A36 #BFBFBF
+#     urgent_workspace   #FF5555 #FF5555 #F8F8F2
+#     binding_mode       #FF5555 #FF5555 #F8F8F2
+#     }
+#   status_command i3blocks
+# }
 
+#exec --no-startup-id tint2
+exec --no-startup-id xfce4-panel --disable-wm-check
